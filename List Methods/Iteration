@@ -25,4 +25,12 @@ def count_items(alist):
     for item in alist:
         count = count + 1
     return count
-
+def count_odd_items(numlist):
+    """
+    Count number of odd numbers in numlist.
+    """
+    count = 0
+    for num in numlist:
+        if num % 2 == 1:
+            count += 1
+    return count
