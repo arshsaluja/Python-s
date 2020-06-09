@@ -21,3 +21,25 @@ def printlist(tasklist):
         print(num, task)
         num += 1
     print("========================")
+def run():
+    """Manipulate task list"""
+    tasks = []
+    new(tasks, 'Teach Class')
+    printlist(tasks)
+    
+    new(tasks, 'Buy some ties')
+    new(tasks, 'Learn Python')
+    printlist(tasks)
+    
+    new(tasks, 'Build new task list')
+    printlist(tasks)
+    
+    remove_by_num(tasks, 1)
+    printlist(tasks)
+    remove_by_num(tasks, 2)
+    printlist(tasks)
+    
+    remove_by_name(tasks, 'Buy some ties')
+    printlist(tasks)
+
+run()
