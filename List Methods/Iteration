@@ -34,3 +34,20 @@ def count_odd_items(numlist):
         if num % 2 == 1:
             count += 1
     return count
+numbers = list(range(5, 82, 3))
+strings = ["python", "is", "fun", "!"]
+
+print("Iterate over lists and print items")
+print("")
+
+print_items(numbers)
+print_items(strings)
+print_items_bad(numbers)
+
+print("")
+print("Iterate over lists and process them")
+print("")
+
+print(count_items(numbers))
+print(count_items(strings))
+print(count_odd_items(numbers))
