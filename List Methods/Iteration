@@ -8,3 +8,13 @@ def print_items(alist):
     """
     for item in alist:
         print(item)
+
+def print_items_bad(alist):
+    """
+    Iterate over alist and print all items.
+    List indexing in this way is error prone and unnecessary.
+    """
+    length = len(alist)
+    for index in range(length):
+        print(alist[index])
+
