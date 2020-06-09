@@ -17,4 +17,12 @@ def print_items_bad(alist):
     length = len(alist)
     for index in range(length):
         print(alist[index])
+def count_items(alist):
+    """
+    Count number of items in alist.
+    """
+    count = 0
+    for item in alist:
+        count = count + 1
+    return count
 
