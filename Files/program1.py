@@ -15,3 +15,6 @@ openfile = open("the_idiot.txt", "rt")
 
 print(type(openfile))
 print(openfile)
+# Must close file after opening it
+openfile.close()
+
