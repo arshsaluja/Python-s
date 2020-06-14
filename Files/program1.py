@@ -18,3 +18,23 @@ print(openfile)
 # Must close file after opening it
 openfile.close()
 
+print("")
+print("Errors")
+print("======")
+
+# nofile = open("nosuchfile.txt")
+
+print("")
+print("Reading")
+print("=======")
+
+datafile = open("the_idiot.txt", "rt")
+
+data = datafile.read()
+
+print("type:", type(data))
+print("length:", len(data))
+print("")
+print(data)
+
+datafile.close()
