@@ -12,3 +12,15 @@ for line in datafile1.readlines():
     print(line)
 
 datafile1.close()
+
+
+# Direct iteration
+#  This is faster for large files,
+#  as no list is created
+
+datafile2 = open("the_idiot.txt", "rt")
+
+for line in datafile2:
+    print(line)
+
+datafile2.close()
