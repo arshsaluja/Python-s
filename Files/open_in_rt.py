@@ -6,3 +6,6 @@ mode = "rt"
 
 # Actually open the file
 openfile = open(filename, mode)
+
+#Never forget to close the file
+openfile.close()
